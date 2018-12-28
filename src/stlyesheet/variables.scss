@@ -1,3 +1,18 @@
-$background-color : #000;
-$white-color : #fff;
-$arrow-color : #4caf50;
+@import url('https://fonts.googleapis.com/css?family=Ropa+Sans');
+
+$background-color: #000;
+$white-color: #fff;
+$arrow-color: #4caf50;
+$button-blue-color: #3f729d;
+$button-blueLight-color: #3f729d;
+
+/*-------------------
+     Breakpoints
+--------------------*/
+
+$mobileBreakpoint            : 320px;
+$tabletBreakpoint            : 768px;
+$computerBreakpoint          : 992px;
+$largeMonitorBreakpoint      : 1200px;
+$widescreenMonitorBreakpoint : 1920px;
+

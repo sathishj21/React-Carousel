@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from "react-dom";
 import axios from 'axios';
 import Items from './items';
+import Arrow from './arrow';
 import '../stlyesheet/carousel.css';
 class Carousel extends Component {
     constructor() {
@@ -37,15 +38,16 @@ class Carousel extends Component {
     componentDidMount() {
         window.addEventListener("resize", this.updateDimensions);
 
-        axios.get(`${this.state.apiUrl}/?key=${this.state.apiKey}&q=beautiful+landscape&image_type=image&per_page=5&max_height=500`)
-            .then(res => setTimeout(() => this.setState({imageItems: res.data.hits, isImageDataFetched: true}), 100))
+        axios.get(`${this.state.apiUrl}/?key=${this.state.apiKey}&q=beautiful+landscape&image_type=image&per_page=6&max_height=500`)
+            .then(res => setTimeout(() => this.setState({imageItems: res.data.hits, isImageDataFetched: true}), 1000))
             .catch(err => console.log('error ***', err));
     }
 
     scrollAction(e) {
+        const actionType = e.target.id || e.target.parentNode.id;
         const { activeItemIndex, imageItems } = this.state;
         this.setState({
-            activeItemIndex: (e.target.id === 'prev')? (((activeItemIndex + imageItems.length) -1) % imageItems.length) : ((activeItemIndex + 1) % imageItems.length),
+            activeItemIndex: (actionType === 'prev')? (((activeItemIndex + imageItems.length) -1) % imageItems.length) : ((activeItemIndex + 1) % imageItems.length),
         });
     }
 
@@ -56,14 +58,12 @@ class Carousel extends Component {
         return (
             <div className="carousel-container">
                 <div ref="carouselComponent" className="carousel-component">
-                    <div>React Carousel</div>
+                    <h1>React Carousel</h1>
                     <div className="carousel-wrapper">
                         <Items isImageDataFetched={this.state.isImageDataFetched} imageItems={this.state.imageItems} styleProps={styleObj} />
                     </div>
-                </div>
-                <div>
-                    <button className="button" id="prev" onClick={this.scrollAction}>Prev</button>
-                    <button className="button" id="next" onClick={this.scrollAction}>Next</button>
+                    <Arrow id="prev" clickAction={this.scrollAction} content="Prev"/>
+                    <Arrow id="next" clickAction={this.scrollAction} content="Next"/>
                 </div>
             </div>
         );

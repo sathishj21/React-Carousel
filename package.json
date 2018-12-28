@@ -4,9 +4,14 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "jest-enzyme": "^7.0.1",
+    "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.1",
+    "react-test-renderer": "^16.7.0",
     "sass": "^1.15.2"
   },
   "scripts": {
@@ -23,5 +28,16 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/serviceWorker.js",
+      "!src/setupTests.js",
+      "!**/node_modules/**",
+      "!**/coverage/**"
+    ]
+  }
 }
