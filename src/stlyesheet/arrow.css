@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Ropa+Sans");
+/*-------------------
+     Breakpoints
+--------------------*/
+@font-face {
+  font-family: 'carousel';
+  src: url("../fonts/icomoon.eot?vc4svz");
+  src: url("../fonts/icomoon.eot?vc4svz#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?vc4svz") format("truetype"), url("../fonts/icomoon.woff?vc4svz") format("woff"), url("../fonts/icomoon.svg?vc4svz#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'carousel' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-arrow-left:before {
+  content: "\e900"; }
+
+.icon-arrow-right:before {
+  content: "\e901"; }
+
+/* Buttons styles start */
+button {
+  border: none;
+  outline: 0; }
+
+@media only screen and (max-width: 727px) {
+  .button-left {
+    left: 0;
+    border-radius: 0 80px 80px 0;
+    width: 80px;
+    height: 150px;
+    text-align: left; }
+
+  .button-right {
+    right: 0;
+    border-radius: 80px 0 0 80px;
+    width: 80px;
+    height: 150px;
+    text-align: right; }
+
+  button:hover,
+  button:focus {
+    opacity: 0.8; }
+
+  button {
+    top: calc(50% - 75px);
+    opacity: 0.3;
+    margin: 0 auto;
+    position: absolute;
+    background: #fff;
+    font-size: 40px; }
+    button .button-content {
+      display: none;
+      opacity: 1; } }
+@media only screen and (min-width: 768px) {
+  .button-left {
+    border-radius: 5px 0px 0px 5px; }
+
+  .button-right {
+    border-radius: 0px 5px 5px 0px; }
+
+  button {
+    position: relative;
+    padding: 0.6rem 1.2rem;
+    margin: 0.5%;
+    text-decoration: none;
+    background: #3f729d;
+    color: #fff;
+    font-family: 'Ropa Sans';
+    letter-spacing: 0.15rem;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
+    button .icon {
+      display: none; }
+
+  button:hover,
+  button:focus {
+    background: #3f729d; }
+
+  button:active {
+    transform: scale(0.99); } }
+/* Button styles end */
+
+/*# sourceMappingURL=arrow.css.map */
