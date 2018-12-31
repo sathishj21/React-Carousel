@@ -10,5 +10,6 @@ it('renders without crashing', () => {
 });
 
 it('shallow renders without crashing', () => {
-  shallow(<App />);
+  const AppCompoennt = shallow(<App />);
+  expect(AppCompoennt).toMatchSnapshot();
 });

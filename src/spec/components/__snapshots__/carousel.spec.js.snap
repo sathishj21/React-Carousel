@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousel component shallow renders Carousel component without crashing 1`] = `
+<div
+  className="main-container"
+>
+  <Loader />
+</div>
+`;

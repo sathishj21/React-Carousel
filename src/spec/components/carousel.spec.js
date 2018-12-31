@@ -9,7 +9,8 @@ describe('Carousel component', () => {
 
     const defaultProps = {};
     it('shallow renders Carousel component without crashing', () => {
-        RendererComponent({...defaultProps});
+        const CarouselComponent = RendererComponent({...defaultProps});
+        expect(CarouselComponent).toMatchSnapshot();
     });
 
     it('test component scrollAction with target previous action instance', () => {
@@ -40,6 +41,8 @@ describe('Carousel component', () => {
         const component = RendererComponent({...defaultProps});
         const inst = component.instance();
         inst.refs = {carouselComponent: true};
+        window.addEventListener = () => { };
+        window.removeEventListener = () => { };
         inst.updateDimensions();
     });
 });

@@ -8,7 +8,7 @@ button{
   outline: 0;
 }
 
-@media only screen and (max-width: 727px) {
+@media only screen and (max-width: $mobileMaxBreakpoint) {
 
   .button-left {
     left: 0;
@@ -35,7 +35,7 @@ button{
     opacity: 0.3;
     margin: 0 auto;
     position: absolute;
-    background: #fff;
+    background: $white-color;
     font-size: 40px;
     .button-content {
       display: none;
@@ -43,7 +43,6 @@ button{
     }
   }
 }
-
 
 @media only screen and (min-width: $tabletBreakpoint) {
 

@@ -1,0 +1,41 @@
+@import "variables";
+
+.loader{
+  position: absolute;
+  background-color: $black-color;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  opacity: 0.6;
+
+  .loader-inner{
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: calc(50% - 75px);
+    position: absolute;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border: 2px double $white-color;
+    border-left: none;
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}

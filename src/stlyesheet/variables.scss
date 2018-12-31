@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Ropa+Sans');
 
-$background-color: #000;
+$black-color: #000;
 $white-color: #fff;
+$error-color: #ff0000;
 $arrow-color: #4caf50;
 $button-blue-color: #3f729d;
 $button-blueLight-color: #3f729d;
@@ -11,6 +12,7 @@ $button-blueLight-color: #3f729d;
 --------------------*/
 
 $mobileBreakpoint            : 320px;
+$mobileMaxBreakpoint         : 767px;
 $tabletBreakpoint            : 768px;
 $computerBreakpoint          : 992px;
 $largeMonitorBreakpoint      : 1200px;

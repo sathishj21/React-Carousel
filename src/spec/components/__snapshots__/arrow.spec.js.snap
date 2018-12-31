@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallow renders Carousel component without crashing 1`] = `
+<button
+  className="button-left"
+  id="prev"
+  onClick={[MockFunction]}
+>
+  <span
+    className="icon icon-arrow-left"
+  />
+  <span
+    className="button-content"
+  >
+    Prev
+  </span>
+</button>
+`;
