@@ -1,0 +1,6 @@
+{
+    "header": "React Carousel",
+    "arrow.previous": "Prev",
+    "arrow.next": "Next",
+    "error.message": "Something went wrong with API request => "
+}

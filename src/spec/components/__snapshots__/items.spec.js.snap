@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallow renders Carousel component without crashing 1`] = `
+<div
+  className="carousel-container"
+  style={
+    Object {
+      "marginLeft": 300,
+      "width": 1500,
+    }
+  }
+>
+  <div
+    className="item"
+    key="0"
+  >
+    <img
+      alt="alt-text"
+      src="https://pixabay.com/get/ea35b60821f6093ed1584d05fb1d4f90e671e2d31cac104491f6c179a5edb3bd_640.jpg"
+    />
+    <p
+      className="slider-caption"
+    >
+      FANTASY
+    </p>
+    <div
+      className="slider-caption-wrapper"
+    />
+  </div>
+  <div
+    className="item"
+    key="1"
+  >
+    <img
+      alt="alt-text"
+      src="https://pixabay.com/get/e835b60d20f6093ed1584d05fb1d4f90e671e2d31cac104491f6c179a5edb3bd_640.jpg"
+    />
+    <p
+      className="slider-caption"
+    >
+      GREEN
+    </p>
+    <div
+      className="slider-caption-wrapper"
+    />
+  </div>
+  <div
+    className="item"
+    key="2"
+  >
+    <img
+      alt="alt-text"
+      src="https://pixabay.com/get/e833b90b28f1033ed1584d05fb1d4f90e671e2d31cac104491f6c179a5edb3bd_640.jpg"
+    />
+    <p
+      className="slider-caption"
+    >
+      BARLEY FIELD
+    </p>
+    <div
+      className="slider-caption-wrapper"
+    />
+  </div>
+</div>
+`;

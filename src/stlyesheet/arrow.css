@@ -32,7 +32,7 @@ button {
   border: none;
   outline: 0; }
 
-@media only screen and (max-width: 727px) {
+@media only screen and (max-width: 767px) {
   .button-left {
     left: 0;
     border-radius: 0 80px 80px 0;

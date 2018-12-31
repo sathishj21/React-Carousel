@@ -10,5 +10,6 @@ const defaultProps = {
 
 
 it('shallow renders Carousel component without crashing', () => {
-    shallow(<Arrow {...defaultProps} />);
+    const ArrowComponent = shallow(<Arrow {...defaultProps} />);
+    expect(ArrowComponent).toMatchSnapshot();
 });
